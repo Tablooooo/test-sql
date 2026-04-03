@@ -1,0 +1,24 @@
+10. Afficher tous les utilisateurs.
+  SELECT * FROM users;
+
+11. Afficher uniquement le nom des utilisateurs.
+  SELECT name FROM users;
+
+12. Afficher les utilisateurs qui ont plus de 25 ans.
+  SELECT * FROM users WHERE age>25;  
+
+13. Afficher les utilisateurs qui habitent à Paris.
+  SELECT * FROM users WHERE city = "Paris";
+
+14. Afficher les utilisateurs qui ont "Mar" dans le nom ou le prénom. 💡
+  SELECT * FROM users WHERE name LIKE "%Mar%" OR firstname LIKE "%Mar%";
+
+15. Afficher les utilisateurs qui habitent à Marseille ou Lille et qui ont entre 18 et 30 ans. 💡
+  SELECT * FROM users WHERE
+  city = "Marseille"
+  OR city = "Lille"
+  AND age>18
+  AND age<30;
+
+16. Afficher les utilisateurs triés par âge du plus grand au plus petit. 💡
+  SELECT * FROM users ORDER BY age DESC;

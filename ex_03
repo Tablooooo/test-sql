@@ -1,0 +1,19 @@
+17. Afficher toutes les commandes.
+  SELECT * FROM orders;
+
+18. Afficher les commandes dont le montant est supérieur à 100€.
+  SELECT * FROM orders WHERE amount>100;
+
+19. Afficher le nom du client et l’id de sa commande.
+  SELECT clients.name, orders.id FROM clients
+  JOIN orders
+  ON clients.id = orders.clients_id;
+
+20. Afficher toutes les commandes associées à un client.
+  SELECT * FROM orders
+  JOIN clients
+  ON orders.client_id = clients.id;
+
+21. Afficher le montant total de toutes les commandes. 💡
+22. Trouver la moyenne des montants des commandes. 💡
+23. Trouver le nombre de commandes par client. 💡

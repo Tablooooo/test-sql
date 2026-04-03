@@ -1,0 +1,31 @@
+1. Comment afficher toutes les informations d’une table ? (syntaxe complète)
+  SELECT * FROM nomDeLaTable;
+
+2. Quelle commande permet de sélectionner la base de données à utiliser ?
+  USE nomDeLaBaseDeDonnées;
+
+3. Expliquer quelle est la différence entre SELECT * et SELECT colonne ?
+  SELECT * permet de sélectionner tous les éléments d'une table
+  alors que
+  SELECT colonne permet de récupérer toutes les données d'une colonne précise de la table souhaitée.
+
+4. Quel terme permet de ne pas afficher les doublons ? Donnez un exemple 💡
+  //
+
+5. Quel mot-clé permet de filtrer les résultats?
+  Le mot clé WHERE
+
+6. Comment rechercher une valeur partielle dans une colonne ? Donnez un exemple
+  Pour recherche une valeur partielle dans une colonne on peut utiliser le mot clé LIKE
+  Par exemple SELECT * FROM table WHERE prenom LIKE "%ard" permettra de sélectionner tous les prenoms terminant par "ard" comme richard ou bernard.
+
+7. Quelle est la différence entre AND et OR ?
+  AND demande à ce que tous les filtres soient validés pour ressortir un résultat correspondant
+  OR demande à ce qu'au moins un filtre parmi tout ceux énumérés soient validés pour ressortir un résultat
+
+8. Quelle fonction permet de compter le nombre de lignes ? 💡
+  La fonction row_count()
+
+9. Quelle est la différence entre DROP et DELETE ?
+  DROP permet de supprimer une table
+  DELETE permet de supprimer une ligne d'une table
